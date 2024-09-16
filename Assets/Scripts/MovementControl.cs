@@ -6,6 +6,7 @@ using UnityEngine;
 public class MovementControl : MonoBehaviour
 {
     public float speed;
+    public float rotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,12 @@ public class MovementControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(0, 0, speed);
+            transform.Translate(new Vector3(0, 0, speed) * Time.deltaTime, Space.Self);
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(new Vector3(0, 0, rotation) * Time.deltaTime, Space.Self);
+            
         }
     }
 }

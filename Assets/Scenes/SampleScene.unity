@@ -252,6 +252,25 @@ LightingSettings:
   m_PVRTiledBaking: 0
   m_NumRaysToShootPerTexel: -1
   m_RespectSceneVisibilityWhenBakingGI: 0
+--- !u!1 &730183870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3727328321931693698, guid: a4fdf02aa6b659643920e013d259f96d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8366257309243475173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &730183875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730183870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2154c207ad6eba141830aeddf0b2c6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 881756589}
 --- !u!1 &740048436
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76704931c9881ac4cbead6995637816a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
+  speed: 10
+  rotation: 180
 --- !u!1 &1204917959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,7 +4103,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3727328321931693698, guid: a4fdf02aa6b659643920e013d259f96d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730183875}
   m_SourcePrefab: {fileID: 100100000, guid: a4fdf02aa6b659643920e013d259f96d, type: 3}
 --- !u!1001 &8808818923045083810
 PrefabInstance:
