@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement1 : MonoBehaviour
 {
-    public float moveSpeed = 25f;
+    [Range(10, 100)] public float moveSpeed = 25f;
         private void Update()
         {
             float moveVertical = Input.GetAxis("Vertical");
