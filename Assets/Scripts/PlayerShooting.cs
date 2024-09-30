@@ -6,6 +6,7 @@ public class PlayerShooting : MonoBehaviour
 {
 
     public GameObject prefab;
+    public GameObject shootPoint; 
 
     // Update is called once per frame
  
@@ -13,8 +14,10 @@ public class PlayerShooting : MonoBehaviour
     {
        if
            (Input.GetKeyDown(KeyCode.O))
-      {
-            Instantiate(prefab, transform.position, transform.rotation);
+        {
+            GameObject clone = Instantiate(prefab);
+            clone.transform.position = shootPoint.transform.position;
+            clone.transform.rotation = shootPoint.transform.rotation;
         }
 
    }

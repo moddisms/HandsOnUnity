@@ -8,6 +8,12 @@ public class PlayerMovement : MonoBehaviour
     // Public variable to set the speed in the Inspector
     public float speed;
     public float rotation;
+
+    void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;   
+    }
     void Update() 
     {
 
