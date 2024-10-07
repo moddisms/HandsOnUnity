@@ -9,7 +9,15 @@ public class FollowMouse : MonoBehaviour
     void Update()
     {
 
+        if (ClickScript.selected == this.gameObject)
+        Follow();
 
+
+    }
+
+    void Follow()
+    {
+        
         // the mouse position
         Vector2 mouse       = Input.mousePosition;
 
@@ -32,9 +40,7 @@ public class FollowMouse : MonoBehaviour
 
         // character move towards this position
         transform.position += transform.forward * velocity;
-
     }
-
 
   
 }
